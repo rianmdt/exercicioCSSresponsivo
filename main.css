@@ -11,6 +11,9 @@ html{
 
 .ford-car{
     background-size: cover;
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .container {
@@ -103,6 +106,7 @@ section h2{
 
 .lista-veiculos img{
     max-width: 100%;
+    
 }
 
 .lista-veiculos li h3{
@@ -112,6 +116,8 @@ section h2{
 .item-central{
     margin: 0 5%;
 }
+
+
 
 button{
     display: block;
@@ -174,7 +180,7 @@ footer li img{
     height: 32px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
     .container {
         width: 95%;
     }
@@ -194,22 +200,36 @@ footer li img{
     .lista-veiculos li {
         flex: 1 1 calc(50% - 16px);
     }
+
+    .form-campo{
+        margin-left: 200px;
+        width: 100%;
+    }
+
+    
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
     .container {
         width: 100%;
     }
 
     .container-flex {
         flex-direction: column;
+        
     }
 
     .lista-veiculos li {
         flex: 1 1 100%;
+        
     }
 
     .item-central {
         margin: 0;
+    }
+
+    .ford-car{
+        width: 100%;
+    object-fit: cover;
     }
 }
